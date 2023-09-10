@@ -8,6 +8,7 @@ import UsingEnums from './React-Tips/4-Using-Enums'
 import LoadingIndicator from './React-Tips/5-Loading-Indicator'
 import HandlingMultipleStateUpdates from './React-Tips/6-Handling-Multiple-State-Updates'
 import UsingUseTransitionToInteruptPending from './React-Tips/7-Using-UseTransition-To-Interupt-Pending'
+import DisableSubmitBeforeTaskFinish from './React-Tips/8-Disable-Submit-Before-Task-Finish'
 
 function App() {
 
@@ -43,6 +44,10 @@ function App() {
     {
       title: 'Using useTransition To Interupt Pending',
       element: <UsingUseTransitionToInteruptPending />,
+    },
+    {
+      title: 'Disable Submit Before Task Finish',
+      element: <DisableSubmitBeforeTaskFinish />,
     },
   ]
 
