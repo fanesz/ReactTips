@@ -6,27 +6,31 @@ interface userPlan {
   }
 }
 
+const Premium = () => {
+  return (<h1>Premium plan</h1>)
+}
+const Free = () => {
+  return (<h1>Free plan</h1>)
+}
+
 const UsingEnums = () => {
 
-  const premium = (<h1>Premium plan</h1>)
-  const free = (<h1>Free plan</h1>)
   const user: userPlan = { user: { plan: 'premium' } };
 
   // ================= BEFORE =================
   const getComponent = (user: userPlan) => {
     if (user.user.plan === 'premium') {
-      return premium;
+      return <Premium />;
     } else {
-      return free;
+      return <Free />;
     }
   }
 
   // ================= AFTER =================
   const plan = {
-    premium: premium,
-    free: free,
+    premium: <Premium />,
+    free: <Free />,
   }
-
   const getComponent2 = plan[user.user.plan];
 
 
